@@ -138,5 +138,29 @@ a .bi {
 .add_qualification_btn, .add_skill_btn, .add_project_btn {
   width: 50%;
 }
+.save_profile_btn {
+  width: 50%;
+
+}
 
 /* Create profile styles Ends ---------------------- */
+
+/* profile page styles ------------------------------ */
+
+.traineeimg_p_container {
+  width: 100%;
+  height: 200px;
+}
+.traineeimg_p_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 100px;
+}
+
+.bio_courses_container {
+  height: 100%;
+}
+
+/* profile page styles ends ------------------------------ */

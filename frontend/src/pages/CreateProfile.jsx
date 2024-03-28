@@ -1,6 +1,6 @@
-import Project from "./components/Project";
-import Qualification from "./components/Qualification";
-import Skill from "./components/Skill";
+import Project from "./components/createprofile/Project";
+import Qualification from "./components/createprofile/Qualification";
+import Skill from "./components/createprofile/Skill";
 
 export default function CreateProfile() {
     return (
@@ -9,7 +9,7 @@ export default function CreateProfile() {
                 <h1 className="fs-2 text-primary ms-2 mt-3 mb-3">
                     Create your profile
                 </h1>
-                <form action="#" className="border p-3 m-0">
+                <form action="profile" className="border p-3 m-0">
                     <div className="personal_infos_f">
                         <h3 className="text-primary fs-5 fw-bold mb-2">
                             Personal infos*
@@ -42,6 +42,15 @@ export default function CreateProfile() {
                                 placeholder="last name"
                             />
                         </div>
+                        <div className="trainee_bio_f mt-1 mb-1">
+                            <label htmlFor="trainee_bio">Bio</label>
+                            <textarea
+                                name="trainee_bio"
+                                rows={5}
+                                className="form-control mt-1 mb-1"
+                                placeholder="Bio"
+                            ></textarea>
+                        </div>
                         <div className="trainee_phone_f mt-1">
                             <label htmlFor="trainee_phone">Trainee phone</label>
                             <input
@@ -64,34 +73,55 @@ export default function CreateProfile() {
                         </div>
                     </div>
                     <div className="workExperiences_f">
-                        <h3 className="text-primary fs-5 fw-bold mt-2 mb-2">
+                        <h3 className="text-primary fs-5 fw-bold mt-4 mb-3">
                             Work experiences
                         </h3>
                         <Qualification />
                     </div>
                     <div className="courses_f">
-                        <h3 className="text-primary fs-5 fw-bold mt-2 mb-2">
+                        <h3 className="text-primary fs-5 fw-bold mt-4 mb-3">
                             Courses
                         </h3>
                         <Qualification />
                     </div>
                     <div className="education_f">
-                        <h3 className="text-primary fs-5 fw-bold mt-2 mb-2">
+                        <h3 className="text-primary fs-5 fw-bold mt-4 mb-3">
                             Education
                         </h3>
                         <Qualification />
                     </div>
                     <div className="skills_f">
-                        <h3 className="text-primary fs-5 fw-bold mt-2 mb-2">
+                        <h3 className="text-primary fs-5 fw-bold mt-4 mb-3">
                             Skills
                         </h3>
                         <Skill />
                     </div>
                     <div className="projects_f">
-                        <h3 className="text-primary fs-5 fw-bold mt-2 mb-2">
+                        <h3 className="text-primary fs-5 fw-bold mt-4 mb-3">
                             Projects
                         </h3>
                         <Project />
+                    </div>
+                    <div className="CV_f">
+                        <h3 className="text-primary fs-5 fw-bold mt-4 mb-3">
+                            CV
+                        </h3>
+                        <div className="cvinput_container_f mt-1">
+                            <label htmlFor="trainee_cv">CV file</label>
+                            <input
+                                type="file"
+                                name="trainee_cv"
+                                className="form-control"
+                            />
+                        </div>
+                    </div>
+                    <div className="d-flex justify-content-end mt-3">
+                        <button
+                            type="submit"
+                            className="btn btn-primary save_profile_btn"
+                        >
+                            Save
+                        </button>
                     </div>
                 </form>
             </div>
