@@ -8,12 +8,12 @@ function Layout() {
     const currentPath = location.pathname;
     return (
         <>
-            <header>
+            <header className="page_header">
                 {(currentPath==='/')?<HeroSection />: <Header />}
                 
             </header>
-            <main><Outlet /></main>
-            <footer><Footer /></footer>
+            <main className="page_main"><Outlet /></main>
+            <footer className="page_footer"><Footer /></footer>
             
         </>
     )
