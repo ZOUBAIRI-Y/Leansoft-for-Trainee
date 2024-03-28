@@ -11,34 +11,17 @@
 }
 
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* layout style ------------------------ */
-
-.page_header {
-
-}
-.page_main {
-  flex: 1;
-  min-height: calc(100vh - 76px);
-  overflow-y: auto;
-}
-.page_footer {
-  position: static;
-  width: 100%;
-  bottom: 0;
-}
-
-/* layout style ends ------------------------ */
-
-
-
-/* Header styles -------------------- */
+/* Header styles -------------------------------------------------- */
 .navbar_header {
-  height: 60px;
+}
+button .bi-list {
+    font-size: 2.5rem;
+    color: var(--primary);
 }
 .login_btn {
     width: 100%;
@@ -52,89 +35,108 @@ body {
     transition: 0.6s;
 }
 
-/* Header styles Ends -------------------- */
-
-/* Hero section styles ------------------- */
+/* Hero section styles ----------------------- */
 .heroSection_home {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .hero_main {
-    flex: 1;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 .bg_container {
-    background-image: url("./assets/herosection-1920X1080-.png");
-    background-size: contain;
-    background-position: bottom left;
-    background-repeat: no-repeat;
+  background-image: url("./assets/herosection-1920X1080-.png");
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }
 .heading_container {
-    margin-bottom: 15rem;
+  margin-bottom: 15rem;
 }
 
 @media (max-width: 992px) {
-    .center-heading-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        margin-bottom: 0px;
-    }
-    .center-heroBG {
-        background-position: bottom;
-        height: calc(100% - 30vh);
-    }
+  .center-heading-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      margin-bottom: 0px;
+  }
+  .center-heroBG {
+      background-position: bottom;
+      height: calc(100% - 30vh);
+  }
 }
 @media (max-width: 576px) {
-    .heroSection_home {
-        width: 100%;
-        height: 70vh;
-    }
-    .heading_container h1 {
-        font-size: 3rem;
-    }
+  .heroSection_home {
+      width: 100%;
+      height: 70vh;
+  }
+  .heading_container h1 {
+      font-size: 3rem;
+  }
 }
 
 .heading_container h1 {
-    font-size: 4.2rem;
+  font-size: 4.2rem;
 }
 .heading_container button {
-    background-color: #ffa401;
-    color: whitesmoke;
-    font-weight: bold;
-    width: 10rem;
-    padding: 0.7em;
+  background-color: #ffa401;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.7em;
 }
 .heading_container button:hover {
-    background-color: #ffc65d;
-    color: #855600;
-    transition: 0.5s ease-out;
+  background-color: #ffc65d;
+  color: #855600;
+  transition: 0.5s ease-out;
 }
-/* .bg_container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-
-} */
 /* Hero section styles Ends ------------------- */
 
+/* Header styles Ends ----------------------------------------------- */
 
-/* footer styles -------------------------------- */
+/* footer styles ---------------------------------------------------- */
+.page_footer {
+  position: static;
+  width: 100%;
+  bottom: 0;
+}
+
 .fb_container {
   width: 50px;
   height: 50px;
   border: 1 solid #011e28;
   border-radius: 2.5rem;
 }
-.bi {
+a .bi {
   font-size: 2rem;
 }
 
+/* footer styles ends ----------------------------------------------- */
 
 
+/* Main pages styles ------------------------------------------------ */
 
-/* footer styles ends -------------------------------- */
+.page_main {
+  flex: 1;
+  min-height: calc(100vh);
+  overflow-y: auto;
+}
+
+
+/* Create profile page styles --------------------- */
+
+.trainee_firstName_f,
+.trainee_lastName_f {
+    width: 50%;
+    display: inline-block;
+}
+.add_qualification_btn, .add_skill_btn, .add_project_btn {
+  width: 50%;
+}
+
+/* Create profile styles Ends ---------------------- */

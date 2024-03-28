@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <>
-            <footer className="bg-light">
+            <footer className="bg-light mt-3">
                 <div className="container d-flex flex-row justify-content-center socials_container p-4">
                     <div className="fb_container">
                         <a href="#">
