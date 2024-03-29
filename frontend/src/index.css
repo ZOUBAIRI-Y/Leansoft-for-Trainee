@@ -166,12 +166,19 @@ a .bi {
   border-radius: 50%;
 }
 
-.bio_courses_container {
-  height: 100%;
+.courses_p_container, .workExp_p_container {
+  flex: 1;
 }
 
-.course_title, .course_year {
+
+
+.skills_workExp_container, .bio_courses_container, .personal_infos_p {
+  min-height: 100%;
+}
+
+.course_title, .course_year, .education_year, .education_level, .workExp_title, .workExp_year {
   display: inline-block;
 }
+
 
 /* profile page styles ends ------------------------------ */
