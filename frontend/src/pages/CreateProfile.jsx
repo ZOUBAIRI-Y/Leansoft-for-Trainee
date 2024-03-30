@@ -5,8 +5,8 @@ import Skill from "./components/createprofile/Skill";
 export default function CreateProfile() {
     return (
         <>
-            <div className="container-fluid create_profile_form">
-                <h1 className="fs-2 text-primary ms-2 mt-3 mb-3">
+            <div className="container-fluid ps-5 pe-5 create_profile_form">
+                <h1 className="fs-2 fw-bold text-primary mt-3 mb-3">
                     Create your profile
                 </h1>
                 <form action="profile" className="border p-3 m-0">
