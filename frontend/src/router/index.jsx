@@ -8,7 +8,6 @@ import Signup from "../pages/Signup";
 import CreateProfile from "../pages/CreateProfile";
 import Profile from "../pages/Profile";
 import EditProfile from "../pages/EditProfile";
-import Contact from "../pages/Contact";
 import Guides from "../pages/Guides";
 
 export const router = createBrowserRouter([
