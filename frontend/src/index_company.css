@@ -1,0 +1,59 @@
+/* 
+@media (max-width: 576px) {
+    .leansoft_header {
+        width: 100%;
+        height: 60vh;
+        background-image: url('./assets/heroXS.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+@media (min-width: 576px) {
+    .leansoft_header {
+        width: 100%;
+        height: 70vh;
+        background-image: url('./assets/heroSM.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+@media (min-width: 768px) {
+    .leansoft_header {
+        width: 100%;
+        height: 80vh;
+        background-image: url('./assets/heroMD.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (min-width: 992px) {
+    .leansoft_header {
+        width: 100%;
+        height: 60vh;
+        background-image: url('./assets/heroLG.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+@media (min-width: 1200px) {
+    .leansoft_header {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./assets/heroXL.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}
+@media (max-width: 768px) {
+    .leansoft_header {
+        width: 100%;
+        height: 70vh;
+        background-image: url('./assets/heroMD.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+} */ 

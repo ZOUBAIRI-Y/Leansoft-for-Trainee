@@ -5,22 +5,22 @@ export default function Footer() {
                 <div className="container d-flex flex-row justify-content-center socials_container p-4">
                     <div className="fb_container">
                         <a href="#">
-                            <i class="bi bi-linkedin"></i>
+                            <i className="bi bi-linkedin"></i>
                         </a>
                     </div>
                     <div className="fb_container">
                         <a href="#">
-                            <i class="bi bi-github"></i>
+                            <i className="bi bi-github"></i>
                         </a>
                     </div>
                     <div className="fb_container">
                         <a href="#">
-                            <i class="bi bi-facebook"></i>
+                            <i className="bi bi-facebook"></i>
                         </a>
                     </div>
                     <div className="fb_container">
                         <a href="#">
-                            <i class="bi bi-twitter"></i>
+                            <i className="bi bi-twitter"></i>
                         </a>
                     </div>
                 </div>

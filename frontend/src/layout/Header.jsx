@@ -18,18 +18,13 @@ function Header() {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <i class="bi bi-list"></i>
+                        <i className="bi bi-list"></i>
                     </button>
                     <div className="collapse navbar-collapse " id="navbarNav">
                         <ul className="navbar-nav navig_list mx-auto me-0">
                             <li className="nav-item text-center me-1">
                                 <Link to={"guides"} className="nav-link">
                                     Guides
-                                </Link>
-                            </li>
-                            <li className="nav-item text-center ms-1 me-1">
-                                <Link to={"contact"} className="nav-link">
-                                    Contact
                                 </Link>
                             </li>
                             <li className="nav-item text-center ms-1 me-1">

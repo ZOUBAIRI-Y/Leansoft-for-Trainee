@@ -228,6 +228,12 @@ a .bi {
 .course_title, .course_year, .education_year, .education_level, .workExp_title, .workExp_year {
   display: inline-block;
 }
+@media (max-width: 576px) {
+  .skills_workExp_container, .bio_courses_container, .personal_infos_p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 
 /* profile page styles ends ------------------------------ */

@@ -21,10 +21,6 @@ export const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: 'home-leansoft',
-                element: <Home_Leansoft />
-            },
-            {
                 path: 'login',
                 element: <Login />
             },
@@ -45,16 +41,22 @@ export const router = createBrowserRouter([
                 element: <EditProfile />
             },
             {
-                path: 'contact',
-                element: <Contact />
-            },
-            {
                 path: 'guides',
                 element: <Guides />
             },
             {
                 path: '*',
                 element: <NoPage />
+            }
+        ]
+    },
+    {
+        path: '/home-leansoft',
+        element: <Layout />,
+        children: [
+            {
+                index: true,
+                element: <Home_Leansoft />
             }
         ]
     }
