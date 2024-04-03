@@ -1,6 +1,260 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+:root {
+    --primary: #115a72;
+    --light: #e9f8ff;
+    --success: #9cd1e2;
+    --dark: #011e28;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles -------------------------------------------------- */
+.navbar_header {
+}
+button .bi-list {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+.login_btn {
+    width: 100%;
+}
+.navig_list li {
+    border-radius: 25px;
+    width: 5rem;
+}
+.navig_list li:hover {
+    background-color: var(--success);
+    transition: 0.6s;
+}
+
+/* Hero section styles ----------------------- */
+.heroSection_home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.hero_main {
+  flex: 1;
+  display: flex;
+}
+.bg_container {
+  background-image: url("./assets/herosection-1920X1080-.png");
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.heading_container {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 992px) {
+  .center-heading-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      margin-bottom: 0px;
+  }
+  .center-heroBG {
+      background-position: bottom;
+      height: calc(100% - 30vh);
+  }
+}
+@media (max-width: 576px) {
+  .heroSection_home {
+      width: 100%;
+      height: 70vh;
+  }
+  .heading_container h1 {
+      font-size: 3rem;
+  }
+}
+
+.heading_container h1 {
+  font-size: 4.2rem;
+}
+.heading_container button {
+  background-color: #ffa401;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.7em;
+}
+.heading_container button:hover {
+  background-color: #ffc65d;
+  color: #855600;
+  transition: 0.5s ease-out;
+}
+/* Hero section styles Ends ------------------- */
+
+/* Header styles Ends ----------------------------------------------- */
+
+/* footer styles ---------------------------------------------------- */
+.page_footer {
+  position: static;
+  width: 100%;
+  bottom: 0;
+}
+
+.fb_container {
+  width: 50px;
+  height: 50px;
+  border: 1 solid #011e28;
+  border-radius: 2.5rem;
+}
+a .bi {
+  font-size: 2rem;
+}
+
+/* footer styles ends ----------------------------------------------- */
+
+
+/* Main pages styles ------------------------------------------------ */
+
+.page_main {
+  flex: 1;
+  min-height: calc(100vh);
+  overflow-y: auto;
+}
+
+/* homepage styles ------------------------------- */
+
+.traineeimg_h_container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+/* @media (max-width: 576px) {
+  .traineeimg_h_container {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .traineeimg_h_container {
+    width: 120px;
+    height: 120px;
+  }
+} */
+.traineeimg_h_container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: top center;
+}
+.loc_phone_ed_h_container {
+  flex: 1;
+}
+.specialization_h {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.trainee_education_h {
+}
+.trainee_phone_h_container p, .phone_icn, .trainee_loc_h_container p, .location_icn, .trainee_ed_h_container p, .grad_icn {
+  display: inline-block;
+}
+ 
+.bi-mortarboard-fill, .bi-telephone-fill, .bi-geo-alt-fill {
+  font-size: 1.2rem;
+}
+
+
+/* homepage styles ends ------------------------------- */
+
+/* Create profile page styles --------------------- */
+
+.trainee_firstName_f,
+.trainee_lastName_f {
+    width: 50%;
+    display: inline-block;
+}
+.add_qualification_btn, .add_skill_btn, .add_project_btn {
+  width: 50%;
+}
+.save_profile_btn {
+  width: 50%;
+
+}
+
+/* Create profile styles Ends ---------------------- */
+
+/* profile page styles ------------------------------ */
+
+.traineeimg_p_container {
+  width: 60%;
+  padding-top: 60%; /* 1:1 Aspect Ratio */
+  position: relative;
+}
+.traineeimg_p_container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: top center;
+  border: 0.3em solid var(--primary);
+  border-radius: 50%;
+}
+
+.courses_p_container, .workExp_p_container {
+  flex: 1;
+}
+
+
+
+.skills_workExp_container, .bio_courses_container, .personal_infos_p {
+  min-height: 100%;
+}
+
+.course_title, .course_year, .education_year, .education_level, .workExp_title, .workExp_year {
+  display: inline-block;
+}
+@media (max-width: 576px) {
+  .skills_workExp_container, .bio_courses_container, .personal_infos_p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+/* profile page styles ends ------------------------------ */
+
+/* Login page styles ------------------------------------- */
+/* .divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+} */
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+  height: 100%;
+  }
+}
+
+
+/* Login page styles ends ------------------------------------- */
 
